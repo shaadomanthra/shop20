@@ -8,9 +8,7 @@
         <main>
             <div class="container">
                 <div class="border border-dark p-3 mt-3 mb-3">
-                    
-                    <?php require "modules/product.php"; ?>
-                    
+                <?php require "modules/productdisplay.php"; ?>
                 </div>
             </div>
         </main>
