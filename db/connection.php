@@ -10,6 +10,5 @@
     if(!$conn)
         echo "Not connected";
 
-    //To start the session
-    session_start();
+    
 ?>
