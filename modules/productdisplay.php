@@ -13,18 +13,12 @@
         echo "<img src='". $result['image'] ."' width=200px >";
         
     }
+
+    if(isset($_SESSION['name']))
+        require "modules/editbuttons.php";
 ?>
 
-<div class="mt-4">
-    <a href="update.php?id=<?php echo $result['id']; ?>">
-        <button class="btn btn-success">Edit</button>
-    </a>
-    
-    <a href="delete.php?id=<?php echo $result['id']; ?>">
-        <button class="btn btn-danger">Delete</button>
-    </a>
-    
-</div>
+
    
         
         

@@ -11,6 +11,7 @@
         $status = login($conn,$username,$password);
         
         echo "<h3>".$status."</h3>";
+        header("Location: login.php");
     }
 
     if(isset($_SESSION['name']))
