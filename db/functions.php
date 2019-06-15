@@ -61,6 +61,7 @@
         
         if($userdetails){
             if($userdetails['password']==$password){
+                $_SESSION['name'] = $userdetails['name'];
                 $status = "Login Successful";
             }else{
                 $status = "Incorrect Password";
@@ -73,6 +74,10 @@
         
     }
 
+
+    function logout(){
+        unset($_SESSION['name']);
+    }
 
 
 
